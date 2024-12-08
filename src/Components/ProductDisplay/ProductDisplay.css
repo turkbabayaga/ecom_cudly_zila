@@ -1,0 +1,210 @@
+/* Définition des variables de couleurs et éléments réutilisables */
+:root {
+    --primary-color: #FF5733;  /* Orange vif pour l'action, accentuation */
+    --secondary-color: #C70039; /* Rouge plus doux pour les éléments secondaires */
+    --background-gradient: linear-gradient(135deg, #f2a900, #e94e77); /* Dégradé d'arrière-plan pour du dynamisme */
+    --text-color: #2e2e2e;  /* Gris foncé pour un bon contraste */
+    --light-text-color: #ffffff;  /* Texte blanc pour titres et éléments importants */
+    --border-radius: 12px;  /* Coins arrondis */
+    --box-shadow: rgba(0, 0, 0, 0.2);  /* Ombre discrète */
+    --hover-box-shadow: rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+    --hover-transform: scale(1.05);
+  }
+  
+  /* Reset global */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Typographie moderne */
+  }
+  
+  /* Fond de page */
+  body {
+    background: var(--background-gradient);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  
+  /* Conteneur principal */
+  .product-display-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effet de zoom sur le conteneur principal */
+  .product-display-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px var(--hover-box-shadow);
+  }
+  
+  /* Section gauche (image produit) */
+  .product-display-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+  }
+  
+  .product-main-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-main-img:hover {
+    transform: var(--hover-transform);
+    box-shadow: 0 8px 36px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section droite (détails produit) */
+  .product-display-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    flex: 0.6;
+    min-width: 300px;
+  }
+  
+  /* Titre produit */
+  .product-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  /* Étoiles et avis */
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .star-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .rating-count {
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+  
+  /* Prix */
+  .product-price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+  }
+  
+  .new-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  /* Description produit */
+  .product-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Bouton */
+  .add-to-cart-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+  
+  .add-to-cart-btn:active {
+    transform: scale(1.05);
+  }
+  
+  /* Responsivité */
+  @media (max-width: 900px) {
+    .product-display-container {
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    .product-display-left {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .product-main-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-display-right {
+      max-width: 100%;
+    }
+  
+    .product-title {
+      font-size: 28px;
+    }
+  
+    .product-price {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-to-cart-btn {
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+  

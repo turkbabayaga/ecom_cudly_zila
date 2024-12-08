@@ -1,61 +1,139 @@
+/* Global styles for the Hero section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
 .hero {
-    height: 100%;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    margin: 0 !important;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
     display: flex;
-}
-
-.hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
-
-}
-
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
-    font-weight: 600;
-}
-
-.hero-left p{
-    color: #171717;
-    font-size: 100px;
-    font-weight: 700;
-}
-
-.hero-hand-icon{
-    display: flex; 
-    align-items: center; 
-    gap: 20px;
-}
-
-.hero-hand-icon img{
-    width: 105px;
-}
-
-.hero-latest-btn{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    position: relative; /* Ensures proper positioning of elements */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+    background: transparent; /* Removes background that may create visual borders */
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title .highlight {
+    color: #ff5733;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.hero-description {
     font-size: 22px;
-    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #f8f8f8;
 }
 
-.hero-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
+.hero-button:hover {
+    transform: translateY(-5px);
+    background: #d04e27;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 0; /* Removes rounded corners */
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 0; /* Ensures no rounded corners */
+    border: none; /* Removes unwanted borders */
+    box-shadow: none; /* Ensures a clean image appearance */
+}
+
+.speech-bubble {
+    position: absolute;
+    top: 50%; /* Align vertically to the teddy */
+    right: 5%; /* Adjust to be within the hero section */
+    transform: translateY(-50%); /* Center alignment */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    border: none; /* Removes any border */
+    opacity: 0; /* Initial state for animation */
+    animation: bubbleFadeIn 1.5s ease-in-out forwards 0.5s; /* Adds animation */
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes bubbleFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

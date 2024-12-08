@@ -1,43 +1,59 @@
 import React, { useState } from 'react';
-import './Navbar.css'
-import logo from '../Assets/logo.png'
-import cart_icon from '../Assets/cart_icon.png'
+import './Navbar.css';
+import logo from '../Assets/logo.png';
+import cart_icon from '../Assets/cart_icon.png';
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
-
-    const [menu,setMenu] = useState("shop");
-
+  const [menu, setMenu] = useState('shop');
 
   return (
-    <div className='navbar'>
-        <div className='nav-logo'>
-            <img src={logo} alt="" />
-            <p>Cudly Zilla</p>
-        </div>
-        <ul className="nav-menu">
-            <li>
-                <Link style={{ textDecoration: 'none'}} to='/' onClick={()=>setMenu("shop")}>Shop</Link>
-                {menu==="shop"?<hr/>:<></>}
-            </li>
-            <li>
-                <Link style={{ textDecoration: 'none'}} to='/mens' onClick={()=>setMenu("mens")}>Men</Link>
-                {menu==="mens"?<hr/>:<></>}
-            </li>
-            <li>
-                <Link style={{ textDecoration: 'none'}} to='/women' onClick={()=>setMenu("womens")}>Women</Link>
-                {menu==="womens"?<hr/>:<></>}
-            </li>
-            <li>
-                <Link style={{ textDecoration: 'none'}} to='/kid' onClick={()=>setMenu("kids")}>Kids</Link>
-                {menu==="kids"?<hr/>:<></>}
-            </li>
-        </ul>
-        <div className="nav-login-cart">
-            <Link to='/login'><button>Login</button></Link>
-            <Link to="/cart"><img src={cart_icon} alt="" /></Link>
-            <div className="nav-cart-count">0</div>
-        </div>
+    <div className="navbar">
+      <div className="nav-logo">
+        <img src={logo} alt="" />
+        <p>Cudly Zilla</p>
+      </div>
+      <div className="nav-menu">
+        <Link 
+          to="/" 
+          onClick={() => setMenu("shop")} 
+          className={`nav-button ${menu === "shop" ? "active" : ""}`}
+        >
+          Shop
+        </Link>
+        <Link 
+          to="/mens" 
+          onClick={() => setMenu("mens")} 
+          className={`nav-button ${menu === "mens" ? "active" : ""}`}
+        >
+          Wild Plush
+        </Link>
+        <Link 
+          to="/women" 
+          onClick={() => setMenu("womens")} 
+          className={`nav-button ${menu === "womens" ? "active" : ""}`}
+        >
+          Collector
+        </Link>
+        <Link 
+          to="/kid" 
+          onClick={() => setMenu("kids")} 
+          className={`nav-button ${menu === "kids" ? "active" : ""}`}
+        >
+          Fluffy Friends
+        </Link>
+      </div>
+      <div className="nav-login-cart">
+        <Link to="/login">
+          <button className="nav-login-btn">Login</button>
+        </Link>
+        <Link to="/cart">
+          <div className="cart-icon">
+            <img src={cart_icon} alt="Cart" />
+          </div>
+        </Link>
+        <div className="nav-cart-count">0</div>
+      </div>
     </div>
-  )
-}
+  );
+};
