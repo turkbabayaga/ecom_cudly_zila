@@ -74,7 +74,7 @@ const all_product = [
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "salut c ninho",
     category: "womens",
     image: p5_img,
     new_price: 85.0,
@@ -119,7 +119,7 @@ const all_product = [
   },
   {
     id: 10,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "j'suis pas énervé, juste concentré...",
     category: "womens",
     image: p10_img,
     new_price: 85.0,
@@ -128,7 +128,7 @@ const all_product = [
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Skitch",
     category: "womens",
     image: p11_img,
     new_price: 85.0,
@@ -137,7 +137,7 @@ const all_product = [
   },
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Tozz l'éclair",
     category: "womens",
     image: p12_img,
     new_price: 85.0,
@@ -146,7 +146,7 @@ const all_product = [
   },
   {
     id: 13,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Khoya jsuis épuisey... Ah oui mon prénom c'est Hamid",
     category: "mens",
     image: p13_img,
     new_price: 85.0,
@@ -155,7 +155,7 @@ const all_product = [
   },
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Jbiloute",
     category: "mens",
     image: p14_img,
     new_price: 85.0,
@@ -164,7 +164,7 @@ const all_product = [
   },
   {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Peto biscuit",
     category: "mens",
     image: p15_img,
     new_price: 85.0,
@@ -173,7 +173,7 @@ const all_product = [
   },
   {
     id: 16,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "#1 Recherche Interpol liste rouge",
     category: "mens",
     image: p16_img,
     new_price: 85.0,
@@ -182,7 +182,7 @@ const all_product = [
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Fionapocalypse",
     category: "mens",
     image: p17_img,
     new_price: 85.0,
@@ -191,7 +191,7 @@ const all_product = [
   },
   {
     id: 18,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Migron",
     category: "mens",
     image: p18_img,
     new_price: 85.0,
@@ -200,7 +200,7 @@ const all_product = [
   },
   {
     id: 19,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Mmhh mY BIG BURGER",
     category: "mens",
     image: p19_img,
     new_price: 85.0,
@@ -209,7 +209,7 @@ const all_product = [
   },
   {
     id: 20,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Perdu l'ornithorynque",
     category: "mens",
     image: p20_img,
     new_price: 85.0,
@@ -218,7 +218,7 @@ const all_product = [
   },
   {
     id: 21,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "GAZOUZE",
     category: "mens",
     image: p21_img,
     new_price: 85.0,
@@ -227,7 +227,7 @@ const all_product = [
   },
   {
     id: 22,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Dra t'as pas du feu ?",
     category: "mens",
     image: p22_img,
     new_price: 85.0,
@@ -236,7 +236,7 @@ const all_product = [
   },
   {
     id: 23,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Dark cat",
     category: "mens",
     image: p23_img,
     new_price: 85.0,
@@ -245,7 +245,7 @@ const all_product = [
   },
   {
     id: 24,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Salut toi ...",
     category: "mens",
     image: p24_img,
     new_price: 85.0,
@@ -254,7 +254,7 @@ const all_product = [
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "lit corne",
     category: "kids",
     image: p25_img,
     new_price: 85.0,
@@ -263,7 +263,7 @@ const all_product = [
   },
   {
     id: 26,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Mickey ches les Marabouts",
     category: "kids",
     image: p26_img,
     new_price: 85.0,
@@ -272,7 +272,7 @@ const all_product = [
   },
   {
     id: 27,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "SoNiké",
     category: "kids",
     image: p27_img,
     new_price: 85.0,
@@ -281,7 +281,7 @@ const all_product = [
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Pêche",
     category: "kids",
     image: p28_img,
     new_price: 85.0,
@@ -290,7 +290,7 @@ const all_product = [
   },
   {
     id: 29,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Agent de traffic",
     category: "kids",
     image: p29_img,
     new_price: 85.0,
@@ -299,7 +299,7 @@ const all_product = [
   },
   {
     id: 30,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Grobélix",
     category: "kids",
     image: p30_img,
     new_price: 85.0,
@@ -308,7 +308,7 @@ const all_product = [
   },
   {
     id: 31,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Steven sous 3x filtré",
     category: "kids",
     image: p31_img,
     new_price: 85.0,
@@ -317,7 +317,7 @@ const all_product = [
   },
   {
     id: 32,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "J'suis un fifou mwa",
     category: "kids",
     image: p32_img,
     new_price: 85.0,
@@ -326,7 +326,7 @@ const all_product = [
   },
   {
     id: 33,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Cafard Inshape",
     category: "kids",
     image: p33_img,
     new_price: 85.0,
@@ -335,7 +335,7 @@ const all_product = [
   },
   {
     id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Brother à Gson",
     category: "kids",
     image: p34_img,
     new_price: 85.0,
@@ -344,7 +344,7 @@ const all_product = [
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "c moi wsh",
     category: "kids",
     image: p35_img,
     new_price: 85.0,
@@ -353,7 +353,7 @@ const all_product = [
   },
   {
     id: 36,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Chez ruru",
     category: "kids",
     image: p36_img,
     new_price: 85.0,
