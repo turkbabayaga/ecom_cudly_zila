@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Item = ({ id, image, name, new_price, old_price }) => {
   return (
     <Link to={`/product/${id}`} className='item'>
-      <img src={image} alt={name} />
+      <img onClick={window.scrollTo(0,0)} src={image} alt={name} />
       <p>{name}</p>
       <div className="item-prices">
         <div className="item-price-new">

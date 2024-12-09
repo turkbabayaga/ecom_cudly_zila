@@ -31,7 +31,7 @@ let new_collections = [
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Sidéré",
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,

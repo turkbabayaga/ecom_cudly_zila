@@ -1,24 +1,34 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';  // Import de PropTypes
+import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 import './ProductDisplay.css';
-
+import { ShopContext } from '../../Context/ShopContext';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 
 const ProductDisplay = ({ product }) => {
   const [selectedImage, setSelectedImage] = useState(product.image);
+  const { addToCart } = useContext(ShopContext);
+
+  const handleAddToCart = () => {
+    console.log(`Button clicked for product ID: ${product.id}, Name: ${product.name}`);
+    addToCart(product.id);
+    console.log(`addToCart function executed for product ID: ${product.id}`);
+  };
 
   return (
     <div className="product-display-container">
+      {/* Left Section - Main Image */}
       <div className="product-display-left">
         <div className="product-main-image">
           <img
             src={selectedImage}
-            alt="Main product"
+            alt={product.name}
             className="product-main-img"
           />
         </div>
       </div>
+
+      {/* Right Section - Product Details */}
       <div className="product-display-right">
         <h1 className="product-title">{product.name}</h1>
 
@@ -39,22 +49,30 @@ const ProductDisplay = ({ product }) => {
           <span className="new-price">${product.new_price}</span>
         </div>
 
-        <p className="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+        <p className="product-description">
+          {product.description || "No description available for this product."}
+        </p>
 
-        <button className="add-to-cart-btn">ADD TO CART</button>
+        <button
+          className="add-to-cart-btn"
+          onClick={handleAddToCart}
+        >
+          ADD TO CART
+        </button>
       </div>
     </div>
   );
 };
 
-// Validation des props avec PropTypes
 ProductDisplay.propTypes = {
   product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    old_price: PropTypes.number.isRequired,
+    old_price: PropTypes.number,
     new_price: PropTypes.number.isRequired,
-  }).isRequired
+    description: PropTypes.string,
+  }).isRequired,
 };
 
 export default ProductDisplay;

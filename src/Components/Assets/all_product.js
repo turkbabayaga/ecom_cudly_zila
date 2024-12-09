@@ -35,7 +35,7 @@ import p34_img from "./product_34.png";
 import p35_img from "./product_35.png";
 import p36_img from "./product_36.png";
 
-let all_product = [
+const all_product = [
   {
     id: 1,
     name: "Gare-Field",
@@ -43,6 +43,7 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    description: "Made with the softest fabric, this plush is perfect for bedtime stories.",
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Perfect for all ages, this plush adds a playful touch to any room.",
   },
   {
     id: 3,
@@ -59,6 +61,7 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    description: "Made with the softest fabric, this plush is perfect for bedtime stories.",
   },
   {
     id: 4,
@@ -67,6 +70,7 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    description: "Its cheerful design makes it a great gift for any occasion.",
   },
   {
     id: 5,
@@ -75,6 +79,7 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "This plush is a comforting companion for rainy days.",
   },
   {
     id: 6,
@@ -83,30 +88,34 @@ let all_product = [
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "With its enchanting design, it’s a must-have for collectors.",
   },
   {
     id: 7,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Bario",
     category: "womens",
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "This owl plush offers both comfort and a stylish touch to decor.",
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Sidéré",
     category: "womens",
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Ideal for cozy nights, this plush is a family favorite.",
   },
   {
     id: 9,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Grokachu",
     category: "womens",
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A timeless addition to any toy collection.",
   },
   {
     id: 10,
@@ -115,6 +124,7 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "This plush offers elegance and comfort in one delightful package.",
   },
   {
     id: 11,
@@ -123,6 +133,7 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Its cheerful appearance brings joy to any household.",
   },
   {
     id: 12,
@@ -131,6 +142,7 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A plush that combines mystery and comfort for all ages.",
   },
   {
     id: 13,
@@ -139,6 +151,7 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Bring courage and charm to your living space with this plush.",
   },
   {
     id: 14,
@@ -147,6 +160,7 @@ let all_product = [
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Its durable design makes it a perfect companion for kids.",
   },
   {
     id: 15,
@@ -155,6 +169,7 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "An elegant design that fits seamlessly in any setting.",
   },
   {
     id: 16,
@@ -163,6 +178,7 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Crafted to last, this plush is a symbol of strength and comfort.",
   },
   {
     id: 17,
@@ -171,6 +187,7 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A large, soft plush that provides a sense of calm and security.",
   },
   {
     id: 18,
@@ -179,6 +196,7 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "With its sleek design, this plush adds charm to any collection.",
   },
   {
     id: 19,
@@ -187,6 +205,7 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A cheerful addition to playtime with its unique waddling design."
   },
   {
     id: 20,
@@ -195,6 +214,7 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Dive into cuddles with this adorable sea-inspired plush."
   },
   {
     id: 21,
@@ -203,6 +223,7 @@ let all_product = [
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Soft yet fierce, this plush makes a bold statement.",
   },
   {
     id: 22,
@@ -211,6 +232,7 @@ let all_product = [
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Perfect for quiet moments, this plush sparks the imagination.",
   },
   {
     id: 23,
@@ -219,6 +241,7 @@ let all_product = [
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A timeless classic, this plush is a staple for any collector.",
   },
   {
     id: 24,
@@ -227,6 +250,7 @@ let all_product = [
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Fluffy and gentle, this plush is ideal for bedtime stories.",
   },
   {
     id: 25,
@@ -235,6 +259,7 @@ let all_product = [
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Bright and joyful, this plush brings smiles to everyone.",
   },
   {
     id: 26,
@@ -243,6 +268,7 @@ let all_product = [
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A sparkly plush that adds a magical touch to playtime.",
   },
   {
     id: 27,
@@ -251,6 +277,7 @@ let all_product = [
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Smart and sleek, this plush is a true conversation starter.",
   },
   {
     id: 28,
@@ -259,6 +286,7 @@ let all_product = [
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Bold and colorful, this plush adds life to any room.",
   },
   {
     id: 29,
@@ -267,6 +295,7 @@ let all_product = [
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "This plush symbolizes peace and serenity with every cuddle.",
   },
   {
     id: 30,
@@ -275,6 +304,7 @@ let all_product = [
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A playful plush that hops into the hearts of children everywhere.",
   },
   {
     id: 31,
@@ -283,6 +313,7 @@ let all_product = [
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Sleek and elegant, this plush is a perfect blend of style and comfort.",
   },
   {
     id: 32,
@@ -291,6 +322,7 @@ let all_product = [
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Soft and huggable, this alpaca plush is a joy to cuddle with."
   },
   {
     id: 33,
@@ -299,6 +331,7 @@ let all_product = [
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Brighten your day with the cheerful and quirky quokka plush."
   },
   {
     id: 34,
@@ -307,6 +340,7 @@ let all_product = [
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "A charming moose plush that’s both rugged and lovable.",
   },
   {
     id: 35,
@@ -315,6 +349,7 @@ let all_product = [
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Dive into cuddles with this adorable and soft seal plush.",
   },
   {
     id: 36,
@@ -323,6 +358,7 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "This vibrant parrot plush brings color and joy to any space."
   },
 ];
 

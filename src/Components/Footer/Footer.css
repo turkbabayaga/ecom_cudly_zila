@@ -1,54 +1,98 @@
-.footer{
+/* Style pour le Footer */
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background: linear-gradient(135deg, #FFD700, #FF8C00);
+    padding: 50px;
+    color: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.footer-logo p{
-    color: #383838;
-    font-size: 46px;
-    font-weight: 700;
+
+.footer-logo p {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
 }
-.footer-links{
+
+.footer-links {
     display: flex;
     list-style: none;
     gap: 50px;
-    color: #252525;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.footer-links li{
+
+.footer-links li {
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.footer-social-icon{
+
+.footer-links li:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.footer-social-icon {
     display: flex;
     gap: 20px;
 }
-.footer-icons-container{
+
+.footer-icons-container {
     padding: 10px;
-    padding-bottom: 6px;
-    background: #fbfbfb;
-    border: 1px  solid#ebebeb;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #FFD700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.footer-copyright{
+
+.footer-icons-container:hover {
+    transform: translateY(-5px);
+    background: #FFD700;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer-copyright {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     gap: 30px;
     width: 100%;
     margin-bottom: 30px;
-    color: #1a1a1a;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 18px;
 }
-.footer-copyright hr{
+
+.footer-copyright hr {
     width: 80%;
     border: none;
     border-radius: 10px;
     height: 3px;
-    background: #c7c7c7;
+    background: #ffffff;
+}
+
+/* Animation pour le texte */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
