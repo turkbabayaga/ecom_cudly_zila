@@ -1,6 +1,6 @@
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'; // Remplacer BrowserRouter par HashRouter
 import Cart from './Pages/Cart'; // Updated to default import
 import { Shop } from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory'; 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <ShopContextProvider> {/* Enveloppe ton application avec le provider */}
-        <BrowserRouter>
+        <HashRouter> {/* Remplacer BrowserRouter par HashRouter */}
           <Navbar />
           <Routes>
             <Route path='/' element={<Shop />} />
@@ -24,11 +24,11 @@ function App() {
             <Route path='/women' element={<ShopCategory banner={banner_women} category="women" />} />
             <Route path='/kid' element={<ShopCategory banner={banner_kids} category="kid" />} />
             <Route path='/product/:productId' element={<Product />} />
-            <Route path='/cart' element={<Cart />} /> {}
+            <Route path='/cart' element={<Cart />} />
             <Route path='/login' element={<LoginSignup />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </HashRouter>
       </ShopContextProvider>
     </div>
   );
